@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9 30%, #e0e0e0);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-hidden {
+    top: -100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5f5f5f;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    background-image: url('file:///C:/Users/91807/Downloads/DALL%C2%B7E%202024-08-06%2023.58.36%20-%20A%20seamless%20background%20image%20with%20a%20healthy%20food%20theme,%20featuring%20fresh%20vegetables,%20fruits,%20and%20grains.%20The%20image%20should%20have%20vibrant%20colors,%20suitable%20.jpg'); /* Updated background image */
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 80px; /* Add margin-top to account for fixed header */
+    border-radius: 10px; /* Optional: to round the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: to add a shadow to the container */
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 220px;
+    padding: 20px;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.card h2 {
+    color: #34495e;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    color: #34495e;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Veterans</title>
+    <link rel="stylesheet" href="styles-lan.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VINTAGE VETERANS</h1>
+        </header>
+
+        <main class="selection">
+            <h2>CHOOSE YOUR LANGUAGE</h2>
+            <div class="button-container">
+                <button class="language-button" onclick="chooseLanguage('english')">English</button>
+                <button class="language-button" onclick="chooseLanguage('hindi')">Hindi</button>
+            </div>
+
+            <div id="location-section" style="display: none;">
+                <h2>Where Do You Live</h2>
+                <div class="button-container">
+                    <button class="location-button">Home</button>
+                    <button class="location-button">Home Isolation</button>
+                    <button class="location-button">Old Age Home</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function chooseLanguage(language) {
+            document.getElementById('location-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
