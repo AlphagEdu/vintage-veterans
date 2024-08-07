@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+header.hidden {
+    top: -60px; /* Adjust this value based on header height */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    padding: 80px 20px 20px; /* Adjusted to ensure content doesn't overlap with the fixed header */
+    overflow-y: auto;
+    height: calc(100vh - 40px); /* Full height minus header height */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.play-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.play-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 220px;
+    padding: 20px;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.game-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.game-card h2 {
+    color: #34495e;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.game-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button:hover {
+    background-color: #2980b9;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sudoku styles */
+.sudoku-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 2px;
+}
+
+.sudoku-grid input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.play-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.play-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Snake game styles */
+.snake-container canvas {
+    display: block;
+    margin: 20px auto;
+    background: #000;
+    border: 2px solid #fff;
+}
+
+/* Tic Tac Toe styles */
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Memory game styles */
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.memory-card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

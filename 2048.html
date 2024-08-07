@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - Vintage Veterans</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 5px;
+        }
+        .grid-cell {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">VINTAGE VETERANS</div>
+    </header>
+    <main>
+        <section class="content">
+            <h1>2048</h1>
+            <p>Merge the numbers to get 2048.</p>
+            <div class="game-container">
+                <div class="grid-container">
+                    <!-- Generate 2048 grid cells -->
+                    <div class="grid-cell"></div>
+                    <!-- Repeat for 16 cells -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Vintage Veterans
+    </footer>
+    <script>
+        // Basic 2048 game logic here
+    </script>
+</body>
+</html>
