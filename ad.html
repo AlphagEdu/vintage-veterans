@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Scoring System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6c757d; /* Grey color for the header */
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header h1 span {
+            color: red; /* Red color for the letter 'V' */
+        }
+
+        header p {
+            font-size: 1rem;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            background: #000; /* Background color to ensure visibility of video */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background: linear-gradient(135deg, #00f260, #0575e6); /* Gradient background for futuristic look */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px; /* Rounded button */
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .button-container button:hover {
+            background: linear-gradient(135deg, #0575e6, #00f260);
+            transform: scale(1.05);
+        }
+
+        .scoreboard {
+            background-color: #007bff; /* Blue color for the scoreboard box */
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .how-it-works {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef; /* Light grey background for the section */
+            border-radius: 5px;
+        }
+
+        .how-it-works h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .how-it-works p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>V</span>INTAGE VETERANS</h1>
+        <p>Each Ad You Will Watch Will Contribute</p>
+    </header>
+
+    <div class="video-container">
+        <video id="adVideo" autoplay controlsList="nofullscreen nodownload noplaybackrate" playsinline muted>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="button-container">
+            <button id="nextAdButton" style="display:none;">Watch Next Ad</button>
+        </div>
+        <div class="scoreboard">
+            <p>Total Amount (₹) Paid: <span id="totalScore">0</span></p>
+        </div>
+    </div>
+
+    <div class="how-it-works">
+        <h2>How This System Works</h2>
+        <p>Watch each ad to earn points. After the ad finishes, you will receive a random number of points between 0.5 and 3. Click the "Watch Next Ad" button to proceed to the next ad. The total score will update accordingly.</p>
+    </div>
+
+    <script>
+        const videos = [
+            'ad-1.mp4', 'ad-2.mp4', 'ad-3.mp4', 
+            'ad-4.mp4', 'ad-5.mp4', 'ad-6.mp4', 
+            'ad-7.mp4'
+        ];
+        let totalScore = 0;
+
+        function getRandomScore() {
+            return (Math.random() * 2.5 + 0.5).toFixed(2); // Random score between 0.5 and 3
+        }
+
+        function getRandomVideo() {
+            return videos[Math.floor(Math.random() * videos.length)];
+        }
+
+        function updateScore() {
+            const score = getRandomScore();
+            totalScore += parseFloat(score);
+            document.getElementById('totalScore').innerText = totalScore.toFixed(2);
+        }
+
+        function playNextVideo() {
+            const videoElement = document.getElementById('adVideo');
+            videoElement.src = getRandomVideo();
+            videoElement.play();
+            videoElement.muted = false; // Ensure audio is not muted
+            updateScore();
+        }
+
+        document.getElementById('nextAdButton').addEventListener('click', playNextVideo);
+
+        document.getElementById('adVideo').addEventListener('ended', () => {
+            document.getElementById('nextAdButton').style.display = 'block';
+        });
+
+        // Initialize with the first video
+        playNextVideo();
+    </script>
+</body>
+</html>
