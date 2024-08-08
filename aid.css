@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 36px;
+}
+
+.red-text {
+    color: #d9534f;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+.emergency-text {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #d9534f;
+}
+
+.ambulance-section {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ambulance-section div {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.call-now-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.call-now-button:hover {
+    background-color: #218838;
+}

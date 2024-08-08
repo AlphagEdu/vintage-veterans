@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="med.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Medicine Reminder</h1>
+    </div>
+    <div class="content">
+        <div class="medicine-list">
+            <!-- Medicine items will be added dynamically by JavaScript -->
+        </div>
+        <div class="medicine-form">
+            <h2>Add Medicine</h2>
+            <form id="addMedicineForm">
+                <label for="medicineName">Medicine Name:</label>
+                <input type="text" id="medicineName" name="medicineName" required>
+                <label for="medicineTime">Time:</label>
+                <input type="time" id="medicineTime" name="medicineTime" required>
+                <label for="medicineDays">Days:</label>
+                <input type="text" id="medicineDays" name="medicineDays" placeholder="e.g. Monday, Wednesday, Friday" required>
+                <button type="submit">Add Medicine</button>
+            </form>
+        </div>
+    </div>
+    <script src="med.js"></script>
+</body>
+</html>
