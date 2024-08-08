@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Gym</title>
+    <link rel="stylesheet" href="mindgym.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Mind Gym</h1>
+        <button id="language-toggle" onclick="toggleLanguage()">Switch to Hindi</button>
+    </header>
+    <main>
+        <section class="reading-materials">
+            <h2 id="reading-title">Reading Materials</h2>
+            <div class="material">
+                <h3 id="article1-title">Government Launches New Pension Scheme for Senior Citizens</h3>
+                <p id="article1-text">The Indian government has introduced a new pension scheme aimed at enhancing financial security for senior citizens. The scheme offers increased benefits and a higher monthly pension, providing additional support to retirees. This initiative is designed to address the growing need for financial stability among older adults and ensure they can maintain a comfortable standard of living. The program also includes provisions for periodic adjustments based on inflation rates.               </p>
+                <button onclick="reciteText(document.getElementById('article1-text').textContent)">Recite</button>
+            </div>
+            <div class="material">
+                <h3 id="article2-title">National Health Mission Expands Geriatric Care Services</h3>
+                <p id="article2-text">The National Health Mission has announced an expansion of its geriatric care services across India. This initiative includes the establishment of specialized geriatric care centers in rural and urban areas, offering services such as health screenings, chronic disease management, and wellness programs. The aim is to improve healthcare access and quality for elderly individuals, addressing their specific health needs and promoting healthier aging.
+
+                </p>
+                <button onclick="reciteText(document.getElementById('article2-text').textContent)">Recite</button>
+            </div>
+
+            <div class="material">
+                <h3 id="article2-title">Indian Government Launches Senior Citizen Digital Literacy Campaign</h3>
+                <p id="article2-text">In an effort to bridge the digital divide, the Indian government has launched a campaign to enhance digital literacy among senior citizens. The program provides free training sessions on using smartphones, internet services, and digital banking. By empowering older adults with digital skills, the initiative aims to make them more comfortable with technology and ensure they can access online services and stay connected with family and friends.</p>
+                <button onclick="reciteText(document.getElementById('article2-text').textContent)">Recite</button>
+            </div>
+
+            <div class="material">
+                <h3 id="article2-title">Historic Monument Restoration Project Highlights India’s Heritage</h3>
+                <p id="article2-text">The Indian government has embarked on a major restoration project for several historic monuments, including prominent sites from India’s rich cultural heritage. This project aims to preserve and revitalize historical landmarks, ensuring that they remain accessible for future generations. The initiative not only focuses on physical restoration but also on promoting cultural awareness and tourism, which are of particular interest to older adults who value historical preservation and cultural heritage.  </p>
+                <button onclick="reciteText(document.getElementById('article2-text').textContent)">Recite</button>
+            </div>
+            <!-- Add more articles as needed -->
+        </section>
+
+        <section class="news">
+            <h2 id="news-title">Latest News</h2>
+            <ul>
+                <li><a id="news1" href="https://www.indiatoday.in/india/story/delhi-coaching-centre-upsc-aspirants-death-old-rajender-nagar-magisterial-probe-mcd-fire-department-2578873-2024-08-08" target="_blank">News Headline 1</a></li>
+                <li><a id="news2" href="https://www.ndtv.com/world-news/no-update-on-sheikh-hasinas-plan-says-india-after-ex-bangladesh-pm-flees-crisis-hit-nation-6292172" target="_blank">News Headline 2</a></li>
+                <li><a id="news3" href="https://www.hindustantimes.com/india-news/waqf-amendment-bill-to-be-sent-to-joint-parliamentary-committee-govt-101723110332171.html" target="_blank">News Headline 3</a></li>
+                <li><a id="news1" href="https://www.indiatoday.in/india/story/delhi-coaching-centre-upsc-aspirants-death-old-rajender-nagar-magisterial-probe-mcd-fire-department-2578873-2024-08-08" target="_blank">News Headline 4</a></li>
+                <li><a id="news2" href="https://www.ndtv.com/world-news/no-update-on-sheikh-hasinas-plan-says-india-after-ex-bangladesh-pm-flees-crisis-hit-nation-6292172" target="_blank">News Headline 5</a></li>
+                <li><a id="news3" href="https://www.hindustantimes.com/india-news/waqf-amendment-bill-to-be-sent-to-joint-parliamentary-committee-govt-101723110332171.html" target="_blank">News Headline 6</a></li>
+                <!-- Add more news links as needed -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Mind Gym
+    </footer>
+    <script src="mindgym.js"></script>
+</body>
+</html>

@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const medicineList = [
         {
-            name: 'Medicine A',
+            name: 'Thyroix-50',
             time: '08:00 AM',
             days: ['Monday', 'Wednesday', 'Friday']
         },
         {
-            name: 'Medicine B',
+            name: 'Vitamin-C Capsules',
             time: '12:00 PM',
             days: ['Tuesday', 'Thursday']
         },
         {
-            name: 'Medicine C',
+            name: 'Calcium Pills',
             time: '06:00 PM',
             days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
         }
