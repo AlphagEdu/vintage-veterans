@@ -1,19 +1,19 @@
 const videosList = [
 {
 	video: '0812.mp4',
-	title: 'Title'
+	title: 'Ep-1 : Shoulder Strength'
 },
 {
 	video: '0810.mp4',
-	title: 'Title'
+	title: 'Ep-2 : Shoulder Strength'
 },
 {
 	video: '0811.mp4',
-	title: 'Title'
+	title: 'Ep-1 : Shoulder Pain'
 },
 {
 	video: '0809.mp4',
-	title: 'Title'
+	title: 'Ep-2 : Shoulder Pain'
 },
 {
 	video: 'images/vid-4.mp4',
