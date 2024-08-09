@@ -1,19 +1,19 @@
 const videosList = [
 {
-	video: 'images/vid-9.mp4',
-	title: '3D helicopter animation'
+	video: '0812.mp4',
+	title: 'Title'
 },
 {
-	video: 'images/vid-3.mp4',
-	title: 'emoji falling animation'
+	video: '0810.mp4',
+	title: 'Title'
 },
 {
-	video: 'images/vid-1.mp4',
-	title: 'house flood animation'
+	video: '0811.mp4',
+	title: 'Title'
 },
 {
-	video: 'images/vid-2.mp4',
-	title: 'zoombie walking animation'
+	video: '0809.mp4',
+	title: 'Title'
 },
 {
 	video: 'images/vid-4.mp4',
