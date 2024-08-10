@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const medicineList = [
         {
             name: 'Thyroix-50',
-            time: '08:00 AM',
+            time: '08:00',
             days: ['Monday', 'Wednesday', 'Friday']
         },
         {
             name: 'Vitamin-C Capsules',
-            time: '12:00 PM',
+            time: '12:00',
             days: ['Tuesday', 'Thursday']
         },
         {
             name: 'Calcium Pills',
-            time: '06:00 PM',
+            time: '18:00',
             days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
         }
     ];
@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         const medicineName = document.getElementById('medicineName').value;
         const medicineTime = document.getElementById('medicineTime').value;
-        const daysCheckboxes = document.querySelectorAll('input[name="days"]:checked');
-        const medicineDays = Array.from(daysCheckboxes).map(checkbox => checkbox.value);
+        const medicineDays = document.getElementById('medicineDays').value.split(',').map(day => day.trim());
 
         const newMedicine = {
             name: medicineName,
@@ -60,6 +59,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
         addMedicineForm.reset();
     });
+
+    function checkMedicineTimes() {
+        const now = new Date();
+        const currentDay = now.toLocaleDateString('en-US', { weekday: 'long' });
+        const currentTime = now.toTimeString().substr(0, 5); // Get HH:MM format
+        
+        medicineList.forEach(medicine => {
+            if (medicine.days.includes(currentDay) && medicine.time === currentTime) {
+                alert(`Time to take your medicine: ${medicine.name}`);
+            }
+        });
+    }
+
+    // Check medicine times every minute
+    setInterval(checkMedicineTimes, 60000);
 
     renderMedicineList();
 });
