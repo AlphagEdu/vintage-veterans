@@ -1,39 +1,39 @@
 const videosList = [
 {
 	video: '0812.mp4',
-	title: 'Ep-1 : Shoulder Strength'
+	title: 'Exercise-1'
 },
 {
 	video: '0810.mp4',
-	title: 'Ep-2 : Shoulder Strength'
+	title: 'Exercise-2'
 },
 {
 	video: '0811.mp4',
-	title: 'Ep-1 : Shoulder Pain'
+	title: 'Exercise-3'
 },
 {
 	video: '0809.mp4',
-	title: 'Ep-2 : Shoulder Pain'
+	title: 'Exercise-4'
 },
 {
-	video: 'images/vid-4.mp4',
-	title: '3D town animation'
+	video: '0813.mp4',
+	title: 'Exercise-5'
 },
 {
-	video: 'images/vid-5.mp4',
-	title: 'man chasing carrot animation'
+	video: '0814.mp4',
+	title: 'Exercise-6'
 },
 {
-	video: 'images/vid-6.mp4',
-	title: 'door hinge animation'
+	video: '0815.mp4',
+	title: 'Exercise-7'
 },
 {
-	video: 'images/vid-7.mp4',
-	title: 'poeple walking in town animation'
+	video: '0809.mp4',
+	title: 'Exercise-8'
 },
 {
-	video: 'images/vid-8.mp4',
-	title: 'knight chasing virus animation'
+	video: '0890.mp4',
+	title: 'Exercise-9'
 },
 ]
 
