@@ -1,40 +1,39 @@
 const videosList = [
 	{
 		video: '0812.mp4',
-		title: 'Exercise-1',
+		title: 'Relief From Shoulder Pain',
 	},
 	{
 		video: '0810.mp4',
-		title: 'Exercise-2',
+		title: 'Relief From Back Pain',
 	},
 	{
 		video: '0811.mp4',
-		title: 'Exercise-3',
+		title: 'Relief From Knee Pain,
 	},
 	{
 		video: '0809.mp4',
-		title: 'Exercise-4',
+		title: 'Relief From Joint Pain',
 	},
 	{
 		video: '0813.mp4',
-		title: 'Exercise-5',
+		title: 'Relief From Neck Pain',
 	},
 	{
 		video: '0814.mp4',
-		title: 'Exercise-6',
-		thumbnail: 'thumb5.jpg'
+		title: 'Relief From  Pain',
 	},
 	{
 		video: '0815.mp4',
-		title: 'Exercise-7',
+		title: 'Relief From Hand Pain',
 	},
 	{
 		video: '0809.mp4',
-		title: 'Exercise-8',
+		title: 'Relief From Spine Pain',
 	},
 	{
 		video: '0890.mp4',
-		title: 'Exercise-9',
+		title: 'Relief From Ankle Pain',
 	},
 ]
 
