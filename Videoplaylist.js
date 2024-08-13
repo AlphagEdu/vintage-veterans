@@ -1,39 +1,39 @@
 const videosList = [
 {
-	video: 'images/vid-9.mp4',
-	title: '3D helicopter animation'
+	video: '0812.mp4',
+	title: 'Exercise-1'
 },
 {
-	video: 'images/vid-3.mp4',
-	title: 'emoji falling animation'
+	video: '0810.mp4',
+	title: 'Exercise-2'
 },
 {
-	video: 'images/vid-1.mp4',
-	title: 'house flood animation'
+	video: '0811.mp4',
+	title: 'Exercise-3'
 },
 {
-	video: 'images/vid-2.mp4',
-	title: 'zoombie walking animation'
+	video: '0809.mp4',
+	title: 'Exercise-4'
 },
 {
-	video: 'images/vid-4.mp4',
-	title: '3D town animation'
+	video: '0813.mp4',
+	title: 'Exercise-5'
 },
 {
-	video: 'images/vid-5.mp4',
-	title: 'man chasing carrot animation'
+	video: '0814.mp4',
+	title: 'Exercise-6'
 },
 {
-	video: 'images/vid-6.mp4',
-	title: 'door hinge animation'
+	video: '0815.mp4',
+	title: 'Exercise-7'
 },
 {
-	video: 'images/vid-7.mp4',
-	title: 'poeple walking in town animation'
+	video: '0809.mp4',
+	title: 'Exercise-8'
 },
 {
-	video: 'images/vid-8.mp4',
-	title: 'knight chasing virus animation'
+	video: '0890.mp4',
+	title: 'Exercise-9'
 },
 ]
 
