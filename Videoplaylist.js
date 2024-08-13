@@ -1,55 +1,25 @@
 const videosList = [
-{
-	video: 'images/vid-9.mp4',
-	title: '3D helicopter animation'
-},
-{
-	video: 'images/vid-3.mp4',
-	title: 'emoji falling animation'
-},
-{
-	video: 'images/vid-1.mp4',
-	title: 'house flood animation'
-},
-{
-	video: 'images/vid-2.mp4',
-	title: 'zoombie walking animation'
-},
-{
-	video: 'images/vid-4.mp4',
-	title: '3D town animation'
-},
-{
-	video: 'images/vid-5.mp4',
-	title: 'man chasing carrot animation'
-},
-{
-	video: 'images/vid-6.mp4',
-	title: 'door hinge animation'
-},
-{
-	video: 'images/vid-7.mp4',
-	title: 'poeple walking in town animation'
-},
-{
-	video: 'images/vid-8.mp4',
-	title: 'knight chasing virus animation'
-},
-]
+	{ video: '0812.mp4', title: 'Exercise-1' },
+	{ video: '0810.mp4', title: 'Exercise-2' },
+	{ video: '0811.mp4', title: 'Exercise-3' },
+	{ video: '0809.mp4', title: 'Exercise-4' },
+	{ video: '0813.mp4', title: 'Exercise-5' },
+	{ video: '0814.mp4', title: 'Exercise-6' },
+	{ video: '0815.mp4', title: 'Exercise-7' },
+	{ video: '0809.mp4', title: 'Exercise-8' },
+	{ video: '0890.mp4', title: 'Exercise-9' }
+];
 
-const categories = [...new Set(videosList.map((item) => { return item }))]
-document.getElementById('videosList').innerHTML = categories.map((item) => {
+document.getElementById('videosList').innerHTML = videosList.map((item) => {
 	var { video, title } = item;
-	return (
-		`<div class="list active">
-		<video src=${video} class="list-video"></video>
-		<h3 class="list-title">${title}</h3>
-		</div>`
-		)
-}).join('')
+	return `
+		<div class="list">
+			<video src="${video}" class="list-video"></video>
+			<h3 class="list-title">${title}</h3>
+		</div>`;
+}).join('');
 
 let videoList = document.querySelectorAll('.video-list-container .list');
-videoList.forEach(remove => { remove.classList.remove('active') });
 videoList.forEach(vid => {
 	vid.onclick = () => {
 		videoList.forEach(remove => { remove.classList.remove('active') });
