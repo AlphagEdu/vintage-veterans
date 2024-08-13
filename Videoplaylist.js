@@ -2,27 +2,22 @@ const videosList = [
 	{
 		video: '0812.mp4',
 		title: 'Exercise-1',
-		thumbnail: 'thumb1.jpg'
 	},
 	{
 		video: '0810.mp4',
 		title: 'Exercise-2',
-		thumbnail: 'thumb2.jpg'
 	},
 	{
 		video: '0811.mp4',
 		title: 'Exercise-3',
-		thumbnail: 'thumb3.jpg'
 	},
 	{
 		video: '0809.mp4',
 		title: 'Exercise-4',
-		thumbnail: 'thumb4.jpg'
 	},
 	{
 		video: '0813.mp4',
 		title: 'Exercise-5',
-		thumbnail: 'thumb1.jpg'
 	},
 	{
 		video: '0814.mp4',
@@ -32,17 +27,14 @@ const videosList = [
 	{
 		video: '0815.mp4',
 		title: 'Exercise-7',
-		thumbnail: 'thumb8.jpg'
 	},
 	{
 		video: '0809.mp4',
 		title: 'Exercise-8',
-		thumbnail: 'thumb6.jpg'
 	},
 	{
 		video: '0890.mp4',
 		title: 'Exercise-9',
-		thumbnail: 'thumb7.jpg'
 	},
 ]
 
