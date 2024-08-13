@@ -43,7 +43,6 @@ document.getElementById('videosList').innerHTML = categories.map((item) => {
 	var { video, title, thumbnail } = item;
 	return (
 		`<div class="list active">
-		<img src=${thumbnail} class="list-thumbnail" alt="${title} thumbnail"/>
 		<video src=${video} class="list-video"></video>
 		<h3 class="list-title">${title}</h3>
 		</div>`
